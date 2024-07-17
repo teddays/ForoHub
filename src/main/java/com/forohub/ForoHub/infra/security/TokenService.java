@@ -45,7 +45,7 @@ public class TokenService {
                     .build()
                     .verify(token);
 
-            // Verificar si el sujeto es nulo
+
             String subject = verifier.getSubject();
             if (subject == null) {
                 throw new RuntimeException("El sujeto del token es nulo");
